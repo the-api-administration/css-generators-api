@@ -1,4 +1,4 @@
-const resources = [
+const websites = [
     {
         name: 'Get Waves',
         image: ,
