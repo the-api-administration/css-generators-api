@@ -1,0 +1,28 @@
+{
+  "name": "css-generator-api",
+  "version": "1.0.0",
+  "description": "Search for CSS generators by relevant keywords. This API provides a directory of efficacious websites that generate CSS design elements in order to improve creativity, consistency, and most importantly, efficiency.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/the-api-administration/css-generator-api.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/the-api-administration/css-generator-api/issues"
+  },
+  "homepage": "https://github.com/the-api-administration/css-generator-api#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.19"
+  }
+}
