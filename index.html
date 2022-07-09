@@ -12,13 +12,12 @@
 		<!-- ICON -->
 		<link rel="icon" href="assets/logo.svg" />
 
-		<!-- FONTS -->
+        <!-- FONTS -->
 		<link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Julius+Sans+One&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap" rel="stylesheet">
 
 		<!-- STYLESHEETS -->
-		<link rel="stylesheet" type="text/css" href="./public/css/normalize.css" />
 		<link rel="stylesheet" type="text/css" href="./public/css/style.css" />
 		<link
 			rel="stylesheet"
@@ -30,7 +29,7 @@
 	</head>
 	<body>
 		<div class="wrapper">
-			<nav>
+			<nav id="navbar" class="sticky">
 				<h1>CSS Generator API</h1>
                 <ul>
 				    <li><a href="#">API</a></li>
@@ -40,14 +39,14 @@
 			</nav>
 
 			<main class="hero">
-				<section>
-					<h1>CSS Generator API</h1>
+                    <h1>CSS Generator API</h1>
 					<p>
 						Provides a directory of websites that 
                         generate different CSS design elements.
-                        Search for a CSS generator by relevant keywords.
 					</p>
-				</section>
+                    <p>
+                        Search for a CSS generator by relevant keywords.
+                    </p>
 			</main>
 
 			<section class="documentation">
@@ -177,5 +176,5 @@
 		</div>
 
 	</body>
-	<script src="js/main.js"></script>
+	<script src="./public/js/main.js"></script>
 </html>

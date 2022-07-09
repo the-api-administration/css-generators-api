@@ -20,6 +20,7 @@
   "homepage": "https://github.com/the-api-administration/css-generator-api#readme",
   "dependencies": {
     "cors": "^2.8.5",
+    "ejs": "^3.1.8",
     "express": "^4.18.1"
   },
   "devDependencies": {

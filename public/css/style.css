@@ -1,0 +1,164 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/******************************************************************************************************* 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
+*******************************************************************************************************/
+
+/* END OF CSS RESET */
+
+/******************************************************************************************************* 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
+*******************************************************************************************************/
+/* UNIVERSAL STYLING */
+/******************************************************************************************************* 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
+*******************************************************************************************************/
+
+* {box-sizing: border-box;}
+
+/******************************************************************************************************* 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
+*******************************************************************************************************/
+/* BASE STYLES */
+/******************************************************************************************************* 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
+*******************************************************************************************************/
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.wrapper {
+    display:flex;
+    flex-direction:column;
+}
+
+nav {
+    /* position:absolute; */
+    background-color: transparent;
+    color:white;
+    overflow:hidden;
+    text-transform:uppercase;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding: 0 2rem;
+    height:3rem;
+}
+
+nav h1, nav li {
+    font-family: 'Archivo Narrow', sans-serif;
+    font-weight: 500;
+    letter-spacing: 0.1rem;
+}
+
+nav h1 {
+    font-size:1.5rem;
+}
+
+nav ul {
+    display:flex;
+    gap:1rem;
+    align-items:center;
+}
+
+nav li {
+    list-style:none;
+    font-size:0.8rem;
+}
+
+nav li a {
+    color:rgba(255,255,255,0.8);
+    text-decoration: none;
+}
+
+/* Create a sticky nav! */
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgb(14, 42, 71);
+}
+
+/* Is toggled when user scrolls - makes nav transparent */
+.transparent {
+    background-color: rgb(14, 42, 71);
+}
+
+.hero {
+    height: 30rem;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1021%26quot%3b)' fill='none'%3e%3crect width='1440' height='560' x='0' y='0' fill='url(%23SvgjsLinearGradient1022)'%3e%3c/rect%3e%3cpath d='M525.023934591239 583.3617974686356L529.3526794105469 459.40276442582586 401.0649015484293 579.0330526493277z' fill='rgba(201%2c 139%2c 217%2c 0.4)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M1310.5566703002025 78.9736627674144L1372.1465290187277 190.0847091360541 1483.2575753873675 128.49485041752882 1421.6677166688423 17.383804048889118z' fill='rgba(201%2c 139%2c 217%2c 0.4)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M855.8991355357058 221.19229066308495L881.3633147580048 61.40353003781743 748.4503178179093 109.77990467112706z' fill='rgba(201%2c 139%2c 217%2c 0.4)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M1291.0457413095037 315.20680732425416L1328.9608750530413 404.5292648544911 1418.2833325832783 366.61413111095345 1380.3681988397407 277.2916735807165z' fill='rgba(201%2c 139%2c 217%2c 0.4)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M594.21 282.72 a93.68 93.68 0 1 0 187.36 0 a93.68 93.68 0 1 0 -187.36 0z' fill='rgba(201%2c 139%2c 217%2c 0.4)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M375.169%2c244.766C394.224%2c244.021%2c409.42%2c230.774%2c418.981%2c214.274C428.574%2c197.72%2c433.811%2c177.205%2c423.748%2c160.932C414.045%2c145.242%2c393.606%2c142.784%2c375.169%2c143.428C358.116%2c144.023%2c341.66%2c149.977%2c332.13%2c164.13C321.296%2c180.219%2c315.856%2c200.838%2c324.989%2c217.95C334.56%2c235.883%2c354.858%2c245.561%2c375.169%2c244.766' fill='rgba(201%2c 139%2c 217%2c 0.4)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M139.41 287.08 a158.79 158.79 0 1 0 317.58 0 a158.79 158.79 0 1 0 -317.58 0z' fill='rgba(201%2c 139%2c 217%2c 0.4)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M637.5699381731997 68.26695189356347L484.79544127659193 0.24736349161378257 416.7758528746422 153.02186038822157 569.55034977125 221.04144879017127z' fill='rgba(201%2c 139%2c 217%2c 0.4)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M1353.83204343659 130.33289657748037L1436.1284121015822 17.06166262655485 1322.8571781506566-65.23470603843722 1240.5608094856645 48.036527912488296z' fill='rgba(201%2c 139%2c 217%2c 0.4)' class='triangle-float2'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1021'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3clinearGradient x1='15.28%25' y1='-39.29%25' x2='84.72%25' y2='139.29%25' gradientUnits='userSpaceOnUse' id='SvgjsLinearGradient1022'%3e%3cstop stop-color='%230e2a47' offset='0'%3e%3c/stop%3e%3cstop stop-color='%2300459e' offset='1'%3e%3c/stop%3e%3c/linearGradient%3e%3cstyle%3e %40keyframes float1 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(-10px%2c 0)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float1 %7b animation: float1 5s infinite%3b %7d %40keyframes float2 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(-5px%2c -5px)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float2 %7b animation: float2 4s infinite%3b %7d %40keyframes float3 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(0%2c -10px)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float3 %7b animation: float3 6s infinite%3b %7d %3c/style%3e%3c/defs%3e%3c/svg%3e");
+    background-repeat:no-repeat;
+    background-size:cover;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+.hero h1 {
+    font-size: 4rem;
+    font-weight:400;
+}
+
+.hero h1, .hero p {
+    color:rgba(255,255,255,0.8);
+}
+
+.hero h1 + p {
+    margin-top:1rem;
+}
+
+.hero h1 + p + p {
+    margin-top: 0.3rem;
+}
+
+
