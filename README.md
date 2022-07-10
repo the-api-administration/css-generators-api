@@ -64,7 +64,8 @@ Search for CSS generators by relevant keywords. This API provides a directory of
 
 ### Key learning points
 
-- In the navigation bar, using li with a tags instead of buttons for accessibility purposes [documentation](https://www.digitala11y.com/links-vs-buttons-a-perennial-problem/#:~:text=Use%20buttons%20when%20the%20user,or%20spectators%20of%20the%20site.)  
+- In the navigation bar, using li with a tags instead of buttons for accessibility purposes  
+  → [documentation](https://www.digitala11y.com/links-vs-buttons-a-perennial-problem/#:~:text=Use%20buttons%20when%20the%20user,or%20spectators%20of%20the%20site.)  
 - Creating a sticky nav using position: fixed instead of position: sticky  
 - Enabling smooth scrolling for anchor links    
 - Creating a back-to-top button and raw coding the Javascript for it 
