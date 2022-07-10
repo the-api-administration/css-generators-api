@@ -146,11 +146,6 @@ nav li a {
     background-color: var(--primary);
 }
 
-/* Is toggled when user scrolls - makes nav transparent */
-.transparent {
-    background-color: var(--primary);
-}
-
 /* ~~~~~~~~~~~~~~~~~~~~ */
 /* Back to top button */
 /* ~~~~~~~~~~~~~~~~~~~~ */
