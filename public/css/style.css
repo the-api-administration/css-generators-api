@@ -365,6 +365,7 @@ table.darkTable {
 	flex-direction: column;
 	align-items: center;
 	justify-content: space-around;
+    margin-top:2rem;
 }
 
 .api-test form {
@@ -425,7 +426,7 @@ table.darkTable {
     display:flex;
     justify-content:center;
     align-items:center;
-    margin-top:2.5rem;
+    margin-top:4rem;
     gap:0.5rem;
 }
 
@@ -440,7 +441,8 @@ h3, #test-keyword {
 
 .resultsColumn {
     display:flex;
-    margin-top:1rem;
+    margin-top:4rem;
+    padding: 0 6rem;
 }
 
 .result code, .result code div {
@@ -459,21 +461,24 @@ h3, #test-keyword {
 .resultsColumn ul {
     display:flex;
     flex-wrap:wrap;
+    justify-content:center;
+    gap: 2.5rem;
 }
 
 .resultsColumn li {
     display:flex;
-    width:33%;
+    width:45%;
     overflow-wrap:break-word;
+    padding: 1.5rem;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 .resultsColumn p {
-    max-width:50%;
     overflow-wrap:break-word;
 }
 
 #result-list img {
-    width:50%;
+    width:75%;
 }
 
 /* ~~~~~~~~~~~~~~~~~~~~ */
