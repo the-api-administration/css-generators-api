@@ -71,6 +71,8 @@ Search for CSS generators by relevant keywords. This API provides a directory of
 - First time getting an event to occur when a user presses "enter" after focusing on an input (prevent form submission and page refresh, use the "keydown" event listener)  
 - Pushing a project to heroku, integrating the project with it's github repo  
 - Adding a custom domain name to heroku application (configured the domain's DNS provider, namecheap, to point to the heroku-supplied DNS target)
+  
+<p align="right">(<a href="#top">back to top</a>)</p>
 
 <!-- GETTING STARTED -->
 
