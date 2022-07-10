@@ -62,6 +62,16 @@ Search for CSS generators by relevant keywords. This API provides a directory of
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
+### Key learning points
+
+- Using <li><a> instead of buttons for accessibility purposes  
+- Creating a sticky nav using position: fixed instead of position: sticky  
+- Enabling smooth scrolling for anchor links    
+- Creating a back-to-top button and raw coding the Javascript for it 
+- First time getting an event to occur when a user presses "enter" after focusing on an input (prevent form submission and page refresh, use the "keydown" event listener)  
+- Pushing a project to heroku, integrating the project with it's github repo  
+- Adding a custom domain name to heroku application (configured the domain's DNS provider, namecheap, to point to the heroku-supplied DNS target)
+
 <!-- GETTING STARTED -->
 
 ## Getting Started
@@ -82,8 +92,10 @@ Access our API endpoints to recieve coding resource data in JSON format.
 
 ## Roadmap
 
+- [X] Back to top button  
+- [X] "Sticky" navigation bar
 - [X] Add search functionality
-- [ ] Offer more resources
+- [ ] Offer more websites
 - [X] Support mobile devices
 - [ ] Create more endpoints
 
