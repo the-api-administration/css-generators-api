@@ -63,6 +63,17 @@ table {
 
 * {box-sizing: border-box;}
 
+:root {
+    --primary: rgb(14, 42, 71);
+    --secondary: rgb(220, 222, 255);
+    --accent: rgb(240, 211, 247);
+    --text-accent: #b010d8;
+}
+
+a:hover * {
+    color: var(--accent);
+}
+
 /******************************************************************************************************* 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
 *******************************************************************************************************/
@@ -79,6 +90,10 @@ body {
     display:flex;
     flex-direction:column;
 }
+
+/* ~~~~~~~~~~~~~~~~~~~~ */
+/* Navigation Bar */
+/* ~~~~~~~~~~~~~~~~~~~~ */
 
 nav {
     /* position:absolute; */
@@ -124,13 +139,17 @@ nav li a {
     position: fixed;
     top: 0;
     width: 100%;
-    background-color: rgb(14, 42, 71);
+    background-color: var(--primary);
 }
 
 /* Is toggled when user scrolls - makes nav transparent */
 .transparent {
-    background-color: rgb(14, 42, 71);
+    background-color: var(--primary);
 }
+
+/* ~~~~~~~~~~~~~~~~~~~~ */
+/* Hero */
+/* ~~~~~~~~~~~~~~~~~~~~ */
 
 .hero {
     height: 40rem;
@@ -183,6 +202,10 @@ h2 {
     padding-top: 10rem;
 }
 
+/* ~~~~~~~~~~~~~~~~~~~~ */
+/* Documentation */
+/* ~~~~~~~~~~~~~~~~~~~~ */
+
 .documentationDescription {
     display:flex;
     flex-direction:column;
@@ -190,7 +213,7 @@ h2 {
     font-size:2rem;
 }
 
-/* table */
+/* Documentation Table */
 
 table.darkTable {
 	background-color: #FFFFFF;
@@ -206,7 +229,7 @@ table.darkTable td, table.darkTable th {
 
 table.darkTable tbody td {
 	font-size: 1.4rem;
-	color: rgb(8, 53, 106);
+	color: var(--primary);
 }
 
 table.darkTable tr:nth-child(even) {
@@ -214,8 +237,8 @@ table.darkTable tr:nth-child(even) {
 }
 
 table.darkTable thead {
-	background: rgb(8, 53, 106);
-	border-bottom: 3px solid rgb(8, 53, 106);
+	background: var(--primary);
+	border-bottom: 3px solid var(--primary);
 }
 
 table.darkTable thead th {
@@ -234,12 +257,16 @@ table.darkTable tfoot td {
 }
 
 .tableProperty {
-	border-right: 2px solid rgb(8, 53, 106);
+	border-right: 2px solid var(--primary);
 }
 
 table.darkTable {
-    border: 2px solid rgb(8, 53, 106);
+    border: 2px solid var(--primary);
 }
+
+/* ~~~~~~~~~~~~~~~~~~~~ */
+/* Endpoints */
+/* ~~~~~~~~~~~~~~~~~~~~ */
 
 .endpoints {
     padding-left: 8rem;
@@ -270,7 +297,7 @@ table.darkTable {
 }
 
 .keywordSpan {
-    color: #b010d8;
+    color: var(--text-accent);
 }
 
 .url {
@@ -292,7 +319,7 @@ table.darkTable {
 .endpointsURL {
     display:flex;
     align-items:center;
-    background-color: rgb(220, 222, 255);
+    background-color: var(--secondary);
     color: rgb(56, 56, 56);
     height:3rem;
     font-size: 1.4rem;
@@ -308,7 +335,7 @@ table.darkTable {
 }
 
 .js-fetch code {
-	background: rgb(220, 222, 255);
+	background: var(--secondary);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -327,6 +354,161 @@ table.darkTable {
 
 .indent {
     padding-left:1rem;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~ */
+/* All Generators */
+/* ~~~~~~~~~~~~~~~~~~~~ */
+
+.result, .result code, .result code div {
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:Center;
+}
+
+.result {
+    margin-top:2rem;
+}
+
+.result code, .result code div {
+    gap:1rem;
+}
+
+#result-list img {
+    width:50%;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~ */
+/* Contributors */
+/* ~~~~~~~~~~~~~~~~~~~~ */
+
+#contributors-title {
+	padding-top: 3rem;
+}
+
+.contributors {
+	margin: 3rem 15rem;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.contributors .section {
+	padding: 0 2rem;
+	width: 435px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.card * {
+	margin: 0;
+	padding: 0;
+}
+
+.card {
+	width: 100%;
+	height: 150px;
+	margin: 1.5rem;
+	border-radius: 12px;
+	box-shadow: 0.5px 0.5px 12px 0px #80808042;
+	display: flex;
+	align-items: center;
+	gap: 25px;
+	position: relative;
+	z-index: 2;
+	padding-left: 1.3rem;
+}
+
+.card::after {
+	position: absolute;
+	content: '';
+	width: 20%;
+	height: 100%;
+	background-color: lightgray;
+	z-index: -2;
+	border-radius: 12px 0 0 12px;
+	top: 0;
+	left: 0;
+}
+
+.card img {
+	height: 109px;
+	width: 109px;
+	border-radius: 50%;
+	border: solid 3px lightgray;
+	object-fit: cover;
+}
+
+.cont-info {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 10px;
+}
+.cont-info h4 {
+	color: #7a7a7a;
+	font-size: 1.7rem;
+	font-weight: 700;
+}
+
+.icons {
+	display: flex;
+	gap: 1.5rem;
+	font-size: 1.8rem;
+}
+
+#alexisintech::after {
+	background-color: #961711;
+}
+
+#alexisintech i{
+	color: #961711;
+}
+
+/* Footer */
+
+footer {
+	background-color: var(--primary);
+    color: white;
+    font-family: 'Source Sans Pro', sans-serif;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+    font-size:1rem;
+	padding: 2rem 0;
+    gap:1.5rem;
+}
+
+footer img {
+    width:50%;
+}
+
+footer a {
+	color: var(--text-accent)
+}
+
+hr {
+	border: 1px solid var(--accent);
+	width: 80% ;
+}
+
+footer span {
+    text-transform: uppercase;
+}
+
+footer span a {
+    color:white;
+    text-decoration: none;
+}
+
+footer span a:hover {
+    text-decoration:underline;
+    color: var(--text-accent)
 }
 
 

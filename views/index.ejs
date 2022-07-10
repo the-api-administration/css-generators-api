@@ -101,7 +101,7 @@
 				    	    <p class="smallP">*The "/api" endpoint will return every website object in the array.</p>
                         </section> <!-- .urlP-->
 
-                        <section class="urlP">
+                        <section class=ectlP">
                             <p>Link to filtered objects that contain a specified keyword:</p>
 				    	    <p class="endpointsURL">https://coding-websites-api.herokuapp.com/api/<span class="keywordSpan">&ltkeyword&gt;</span></p>
 				    	    <p class="smallP">*The "/api/keyword" endpoint accepts a keyword that will be used to search through the   <span class="websitesSpan">websites</span> array.</p>
@@ -142,31 +142,29 @@
 			    		<button type="submit" style='display: none;'></button>
 			    	</form>
 			    	<div class="result">
-			    		<div class='scroll-container'>
-			    			<ul id="result-list">
-			    				<!-- Loop through websites array and render     each object to the DOM -->
-			    				<% for(let i = 0; i < websites.length; i++) {   %>
-			    					<li>
-			    						<!-- JSON Format for DOM rendering -->
-			    						<!-- Add indentation, line break and    quotes around each key's value -->
-			    						<pre class="json">
-			    							<code>
-			    								{
-			    									<div class="indent">
-			    										<img src="<%= websites  [i].image %>">
-			    										<p>name: '<%= websites  [i].name %>',</p>
-			    										<p>url: '<a href=<%=    websites[i].url %>     target="_blank"><%=     websites[i].url %></    a>',</p>
-			    										<p>description: '<%=    websites[i].   description %>'</p>
-			    										<p  class="text-truncate">k  eywords: [<%= websites    [i].keywords.map    (keyword => `'$ {keyword}'`).join(",     ") %>]</p>
-			    									</div> <!-- .indent-->
-			    								},
-			    							</code>
-			    						</pre> <!-- .json -->
-			    					</li>
-			    				<% } %>
-			    			</ul> <!-- #result-list -->
-			    		</div> <!-- .scroll-container -->
-			    	</div> <!-- .result -->
+						<div class='scroll-container'>
+							<ul id="result-list">
+								<!-- Loop through websites array and render each object to the DOM -->
+								<% for(let i = 0; i < websites.length; i++) { %>
+									<li>
+										<!-- JSON Format for DOM rendering -->
+										<!-- Add indentation, line break and quotes around each key's value -->
+										<pre class="json">
+											<code>{
+													<div class="indent">
+														<img src="<%= websites[i].image %>">
+														<p>name: '<%= websites[i].name %>',</p>
+														<p>url: '<a href=<%= websites[i].url %> target="_blank"><%= websites[i].url %></a>',</p>
+														<p>description: '<%= websites[i].description %>'</p>
+														<p class="text-truncate">keywords: [<%= websites[i].keywords.map(keyword => `'${keyword}'`).join(", ") %>]</p>
+													</div>},
+											</code>
+										</pre>
+									</li>
+								<% } %>
+							</ul>
+						</div>
+					</div>
 			    </section> <!-- .api-test -->
             
             </section> <!-- .allGenerators-->
@@ -187,13 +185,12 @@
 			</section>
 
 			<footer>
-				<p>Thank You!</p>
-				<a href='https://github.com/the-api-administration/' target='_blank'><img src="public/assets/logo.svg" alt="logo" /></a>
-				<p>
-                    Bugs? Features? Please report them here: <a href="https://github.com/the-api-administration/css-generator-api/issues" target='_blank'>GitHub</a>.
-				</p>
-				<hr>
-				<p>We would love to see what you are making with this API. Please tweet at us!</p>
+                    <a href='https://github.com/the-api-administration/' target='_blank'><img src="public/assets/logo.svg" alt="logo" /></a>
+				    <p>
+                        Bugs? Features? Please report them here: <a href="https://github.com/the-api-administration/css-generator-api/issues" target='_blank'>GitHub</a>.
+				    </p>
+                    <hr>
+                    <span><a href="https://alexisintech.github.io/socialLinks/">© Alexis Aguilar 2022</a></span>
 			</footer>
 
 		</div>
