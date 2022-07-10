@@ -7,7 +7,7 @@
 			name="viewport"
 			content="width=device-width, initial-scale=1.0"
 		/>
-		<title>CSS Generator API</title>
+		<title>CSS Generators API</title>
 
 		<!-- ICON -->
 		<link rel="icon" href="assets/logo.svg" />
@@ -30,7 +30,7 @@
 	<body>
 		<div class="wrapper">
 			<nav id="navbar" class="sticky">
-				<h1>CSS Generator API</h1>
+				<h1>CSS Generators API</h1>
                 <ul>
 				    <li><a href="#API">API</a></li>
                     <li><a href="#Generators">Generators</a></li>
@@ -41,7 +41,7 @@
 			<button onclick="topFunction()" id="backToTop" title="Go to top"><i class="fa-solid fa-arrow-up"></i></button>
 
 			<main class="hero">
-                    <h1>CSS Generator API</h1>
+                    <h1>CSS Generators API</h1>
 					<p>
 						Provides a directory of websites that 
                         generate different CSS design elements.
@@ -81,7 +81,7 @@
 					    <td class="tableProperty" id='description'>description</td><td>[String] A brief description about what thewebsite can generate.</td>
                     </tr>
                     <tr>
-					    <td class="tableProperty" id='keywords'>keywords</td><td id='array'>[Array] Relevant keywords related tothe generator.</td>
+					    <td class="tableProperty" id='keywords'>keywords</td><td id='array'>[Array] Relevant keywords related to the generator.</td>
                     </tr>
 					</tbody>
 				</table> <!-- .darkTable -->
@@ -99,13 +99,13 @@
                         
                         <section class="urlP">
                             <p>Direct link to the entire <span class="websitesSpan">websites</span> array:</p>
-				    	    <p class="endpointsURL">https://cssgenerator.com/api</p>
+				    	    <p class="endpointsURL">https://cssgenerators.com/api</p>
 				    	    <p class="smallP">*The "/api" endpoint will return every website object in the array.</p>
                         </section> <!-- .urlP-->
 
                         <section class="urlP">
                             <p>Link to filtered objects that contain a specified keyword:</p>
-				    	    <p class="endpointsURL">https://coding-websites-api.herokuapp.com/api/<span class="keywordSpan">&ltkeyword&gt;</span></p>
+				    	    <p class="endpointsURL">https://cssgenerators.com/api/<span class="keywordSpan">&ltkeyword&gt;</span></p>
 				    	    <p class="smallP">*The "/api/keyword" endpoint accepts a keyword that will be used to search through the   <span class="websitesSpan">websites</span> array.</p>
                         </section> <!-- .urlP -->
 
@@ -114,7 +114,7 @@
 				    <div class='js-fetch'>
 				    	<p>Example code-block of how to fetch with JavaScript:</p>
 				    	<code id='js-example'>
-                            <p>const URL = `https://cssgenerator.com/api/<span class="keywordSpan">${keyword}</span>`;</p>
+                            <p>const URL = `https://cssgenerators.com/api/<span class="keywordSpan">${keyword}</span>`;</p>
 				    		<p>fetch(URL)</p>
 				    		<p class="indent">.then(res => res.json())</p>
 				    		<p class="indent">.then(data => console.log(data))</p>
@@ -144,7 +144,7 @@
 			    			<i class="fa-solid fa-magnifying-glass"></i>
 			    		</button>
 			    		<button type="submit" style='display: none;'></button>
-			    	</form>
+			    	</form> <!-- #myForm -->
 					
 					<section class="youSearchedFor">
 						<h3 id="youSearchedFor"> </h3> <span id="test-keyword"> </span>
@@ -180,7 +180,7 @@
 			<footer>
                     <a href='https://github.com/the-api-administration/' target='_blank'><img src="public/assets/logo.svg" alt="logo" /></a>
 				    <p>
-                        Bugs? Features? Please report them here: <a href="https://github.com/the-api-administration/css-generator-api/issues" target='_blank'>GitHub</a>.
+                        Bugs? Features? Please report them here: <a href="https://github.com/the-api-administration/css-generators-api/issues" target='_blank'>GitHub</a>.
 				    </p>
                     <hr>
                     <span><a href="https://alexisintech.github.io/socialLinks/">© Alexis Aguilar 2022</a></span>
