@@ -17,7 +17,7 @@
     <a href="https://github.com/the-api-administration/css-generators-api"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://cssgenerators.com/">View Demo</a>
+    <a href="https://cssgenerators.co/">View Demo</a>
     ·
     <a href="https://github.com/the-api-administration/css-generators-api/issues">Report Bug</a>
     ·
@@ -66,7 +66,7 @@ Search for CSS generators by relevant keywords. This API provides a directory of
 
 ## Getting Started
 
-Simply visit: <a href="https://cssgenerators.com/">https://cssgenerators.com/</a> and read our documentation to learn how to interact with our API! If you would like to help us out, feel free to create issues through our github repo.
+Simply visit: <a href="https://cssgenerators.co/">https://cssgenerators.co/</a> and read our documentation to learn how to interact with our API! If you would like to help us out, feel free to create issues through our github repo.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
