@@ -61,6 +61,10 @@ table {
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
 *******************************************************************************************************/
 
+html {
+    scroll-behavior: smooth;
+}
+
 * {box-sizing: border-box;}
 
 :root {
@@ -145,6 +149,36 @@ nav li a {
 /* Is toggled when user scrolls - makes nav transparent */
 .transparent {
     background-color: var(--primary);
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~ */
+/* Back to top button */
+/* ~~~~~~~~~~~~~~~~~~~~ */
+
+#backToTop {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    cursor: pointer;
+    color: #090909;
+    padding: 1em 1.5em;
+    font-size: 24px;
+    border-radius: 1em;
+    background: #eeeeee;
+    border: 1px solid #e8e8e8;
+    transition: all .3s;
+    box-shadow: 6px 6px 12px #cfcfcf;
+}
+   
+#backToTop:hover {
+ border: 1px solid white;
+}
+
+#backToTop:active {
+ box-shadow: 4px 4px 12px #c5c5c5,
+             -4px -4px 12px #ffffff;
 }
 
 /* ~~~~~~~~~~~~~~~~~~~~ */
@@ -360,6 +394,10 @@ table.darkTable {
 /* All Generators */
 /* ~~~~~~~~~~~~~~~~~~~~ */
 
+.allGenerators {
+    padding-bottom:10rem;
+}
+
 .api-test {
 	display: flex;
 	flex-direction: column;
@@ -379,16 +417,20 @@ table.darkTable {
 	width: 65%;
 	padding: 0 0;
 	border-radius: 15px 0px 0px 15px;
-	font-size: 0.8rem;
-	padding-left: 1rem;
+	font-size: 1.5rem;
+	padding-left: 1.5rem;
 	transition: width 500ms ease;
 	border: solid 3px rgb(30, 30, 30);
-	font-size: 1rem;
+	font-size: 1.5rem;
 	font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
 }
 
 .api-test form input::placeholder {
-	font-size: 1rem;
+	font-size: 1.5rem;
 	color: #afafaf;
 	font-weight: 600;
 }
@@ -469,12 +511,13 @@ h3, #test-keyword {
     display:flex;
     width:45%;
     overflow-wrap:break-word;
-    padding: 1.5rem;
+    padding: 3rem;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 .resultsColumn p {
     overflow-wrap:break-word;
+    font-size:1.5rem;
 }
 
 #result-list img {

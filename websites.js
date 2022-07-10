@@ -22,7 +22,7 @@ exports.websites = [
     },
     {
         name: 'animated background generator',
-        image: './public/assets/websiteimages/uiverseio.jpg',
+        image: './public/assets/websiteimages/wwebanimatedbg.jpg',
         url: 'https://wweb.dev/resources/animated-css-background-generator/',
         description: 'Fully customize and generate animated backgrounds with only HTML and CSS.',
         keywords: ['background', 'backgrounds', 'animated background', 'animated backgrounds'],

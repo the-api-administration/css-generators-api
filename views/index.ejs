@@ -32,11 +32,13 @@
 			<nav id="navbar" class="sticky">
 				<h1>CSS Generator API</h1>
                 <ul>
-				    <li><a href="#">API</a></li>
-                    <li><a href="#">Generators</a></li>
-                    <li><a href="#">Contributors</a></li>
+				    <li><a href="#API">API</a></li>
+                    <li><a href="#Generators">Generators</a></li>
+                    <!-- <li><a href="#Contributors">Contributors</a></li> -->
                 </ul>
 			</nav> <!-- #navbar .sticky -->
+
+			<button onclick="topFunction()" id="backToTop" title="Go to top"><i class="fa-solid fa-arrow-up"></i></button>
 
 			<main class="hero">
                     <h1>CSS Generator API</h1>
@@ -49,7 +51,7 @@
                     </p>
 			</main> <!-- .hero -->
 
-			<section class="documentation">
+			<section id="API" class="documentation">
 				
                 <h2>Documentation</h2>
 				
@@ -101,7 +103,7 @@
 				    	    <p class="smallP">*The "/api" endpoint will return every website object in the array.</p>
                         </section> <!-- .urlP-->
 
-                        <section class=ectlP">
+                        <section class="urlP">
                             <p>Link to filtered objects that contain a specified keyword:</p>
 				    	    <p class="endpointsURL">https://coding-websites-api.herokuapp.com/api/<span class="keywordSpan">&ltkeyword&gt;</span></p>
 				    	    <p class="smallP">*The "/api/keyword" endpoint accepts a keyword that will be used to search through the   <span class="websitesSpan">websites</span> array.</p>
@@ -124,7 +126,7 @@
 
             </section> <!-- .endpoints -->
 
-            <section class="allGenerators">
+            <section id="Generators" class="allGenerators">
 			    
                 <h2>All Generators</h2>
 			    
@@ -172,21 +174,6 @@
 			    </section> <!-- .api-test -->
             
             </section> <!-- .allGenerators-->
-
-			<h2 id='contributors-title'>Contributors</h2>
-			<section class="contributors">	
-					<div class='card' id='alexisintech'>
-						<img src="public/assets/alexisintech.jpg" alt="Alexis' photo">
-						<div class='cont-info'>
-							<h4>Alexisintech</h4>
-							<div class='icons'>
-								<a href='https://twitter.com/alexisintech/' target='_blank'><i class="fa-brands fa-twitter"></i></a>
-								<a href='https://www.linkedin.com/in/alexisintech/' target='_blank'><i class="fa-brands fa-linkedin"></i></a>
-								<a href='https://github.com/alexisintech/' target='_blank'><i class="fa-brands fa-github"></i></a>
-							</div>
-						</div>
-					</div>
-			</section>
 
 			<footer>
                     <a href='https://github.com/the-api-administration/' target='_blank'><img src="public/assets/logo.svg" alt="logo" /></a>
