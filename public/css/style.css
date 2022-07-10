@@ -360,20 +360,116 @@ table.darkTable {
 /* All Generators */
 /* ~~~~~~~~~~~~~~~~~~~~ */
 
-.result, .result code, .result code div {
+.api-test {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.api-test form {
+	width: 50%;
+	height: 3.5rem;
+	display: flex;
+	justify-content: center;
+}
+
+.api-test form input {
+	width: 65%;
+	padding: 0 0;
+	border-radius: 15px 0px 0px 15px;
+	font-size: 0.8rem;
+	padding-left: 1rem;
+	transition: width 500ms ease;
+	border: solid 3px rgb(30, 30, 30);
+	font-size: 1rem;
+	font-weight: 600;
+}
+
+.api-test form input::placeholder {
+	font-size: 1rem;
+	color: #afafaf;
+	font-weight: 600;
+}
+
+.api-test form input:focus {
+	width: 70%;
+}
+
+.api-test form input:focus {
+	outline: none;
+}
+
+.api-test form button {
+	width: 10%;
+	background-color: rgb(30, 30, 30);
+	border: solid 2px rgb(30, 30, 30);
+	border-radius: 0 15px 15px 0;
+	font-size: 20px;
+}
+
+.api-test form button i {
+	color: lightgray;
+	transition: 0.3s;
+}
+
+.api-test form button:hover {
+	cursor: pointer;
+}
+
+.api-test form button:hover > i {
+	color: #fff;
+}
+
+.youSearchedFor {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin-top:2.5rem;
+    gap:0.5rem;
+}
+
+h3, #test-keyword {
+    font-size:2rem;
+}
+
+#test-keyword {
+    font-weight: 600;
+    color: var(--text-accent);
+}
+
+.resultsColumn {
+    display:flex;
+    margin-top:1rem;
+}
+
+.result code, .result code div {
     display:flex;
     flex-direction:column;
     justify-content:center;
     align-items:center;
     text-align:Center;
-}
-
-.result {
-    margin-top:2rem;
+    font-size:1.5rem;
 }
 
 .result code, .result code div {
     gap:1rem;
+}
+
+.resultsColumn ul {
+    display:flex;
+    flex-wrap:wrap;
+}
+
+.resultsColumn li {
+    display:flex;
+    width:33%;
+    overflow-wrap:break-word;
+}
+
+.resultsColumn p {
+    max-width:50%;
+    overflow-wrap:break-word;
 }
 
 #result-list img {

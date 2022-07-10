@@ -24,6 +24,12 @@ async function getMatches() {
 	//gets the input from the text box and trims white space and makes it lower case
 	const keyword = document.querySelector('input').value.toLowerCase().trim();
 
+    //have the "you searched for: h3 to appear
+    document.getElementById('youSearchedFor').innerText = 'You searched for: ';
+
+    //place the keyword into span
+    document.getElementById('test-keyword').innerText = keyword;
+
 	try {
 		const res = await fetch('/api');
 		const data = await res.json();
@@ -56,19 +62,15 @@ function renderMatches(matches) {
 
 			// Create an element that looks like a JSON object for every match
 			li.innerHTML = `
-				<pre class="json">
-					<code>
-						{
+					<code>{
 							<div class="indent">
 								<img src="${match.image}">
                                 <h4>name: ${match.name},</h4>
 								<h5>url: '<a href=${match.url} target="_blank">${match.url}</a>',</h5>
 								<h4>description: ${match.description},</h4>
 								<h6 class="text-truncate">keywords: [${match.keywords.map(keyword => `'${keyword}'`).join(", ")}]</h6>
-							</div>
-						},
+							</div>},
 					</code>
-				</pre>
 			`;
 
 			list.appendChild(li);
