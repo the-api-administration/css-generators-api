@@ -131,13 +131,15 @@
                 <h2>All Generators</h2>
 			    
                 <section class="api-test">
-			    	<form action="">
+			    	<form id="myForm" action="">
 			    		<input
-			    			type="text"
+			    			id="input1"
+							type="text"
 			    			name=""
 			    			value=""
 			    			placeholder="keyword"
 			    		/>
+						<input type="submit" value="submit" style="height:0px;width:0px;border:none;padding:0px"/>
 			    		<button id="keyword-btn" type="button">
 			    			<i class="fa-solid fa-magnifying-glass"></i>
 			    		</button>
@@ -157,7 +159,7 @@
 											<!-- JSON Format for DOM rendering -->
 											<!-- Add indentation, line break and quotes around each key's value -->
 												<code>{
-														<div class="indent">
+														<div>
 															<img src="<%= websites[i].image %>">
 															<p>name: '<%= websites[i].name %>',</p>
 															<p>url: '<a href=<%= websites[i].url %> target="_blank"><%= websites[i].url %></a>',</p>

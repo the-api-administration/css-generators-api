@@ -37,6 +37,22 @@ function topFunction() {
 /* Search bar */
 /* =================================== */
 
+
+let form = document.getElementById("myForm");
+
+/* Prevent refreshing the page when the form is submitted */
+function handleForm(event) { event.preventDefault(); } 
+form.addEventListener('submit', handleForm);
+
+/* When the user is focused on the input, and they press enter, run getMatches() */
+let input = document.getElementById("input1");
+   input.addEventListener("keydown", function (e) {
+    if (e.key === "Enter") {  
+      getMatches();
+    }
+  });
+
+
 const btn = document.getElementById('keyword-btn');
 btn.addEventListener('click', getMatches);
 
