@@ -72,6 +72,7 @@ html {
     --secondary: rgb(220, 222, 255);
     --accent: rgb(240, 211, 247);
     --text-accent: #b010d8;
+    --text-accent-dark-background: #ea97ff;
 }
 
 a:hover * {
@@ -426,7 +427,7 @@ table.darkTable {
 
 .api-test form input::placeholder {
 	font-size: 1.5rem;
-	color: #afafaf;
+	color: #585858;
 	font-weight: 600;
 }
 
@@ -540,7 +541,7 @@ footer img {
 }
 
 footer a {
-	color: var(--text-accent)
+	color: var(--text-accent-dark-background)
 }
 
 hr {
